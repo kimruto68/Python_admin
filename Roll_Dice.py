@@ -1,11 +1,13 @@
-people=["Peter", "Evans", "Martin"]
+import random
 
-def happy_birthday():
-        print("Happy birthday to you,")
-        print("Happy birthday to you,")
-        print(f"Happy birthday dear {name},")
-        print("Happy birthday to you,")
-name = input("Please enter the name: ")
-happy_birthday()
-
-
+while True:
+    choice = input("Do you want to roll the Dice? (y/n)'): ").lower()
+    if choice == "y":
+        die1 = random.randint(1, 6)
+        die2 = random.randint(1, 6)
+        print(f"({die1}, {die2})")
+    elif choice == "n":
+        print("Thanks for playing!")
+        break
+    else:
+        print("Invalid choice!")
