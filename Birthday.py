@@ -1,5 +1,3 @@
-people=["Peter", "Evans", "Martin"]
-
 def happy_birthday():
         print("Happy birthday to you,")
         print("Happy birthday to you,")
